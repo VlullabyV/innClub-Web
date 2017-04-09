@@ -1,6 +1,7 @@
 var board = new Array();	// 二维数组 存储数字
 var isadded = new Array();	// 二维数组 用于判断格子是否已经相加过一次
-var score = 0;
+var isWin = false;			// 判断是否达到2048
+var score = 0;				// 分数
 
 $(document).ready(function(){NewGame();});
 
@@ -30,8 +31,11 @@ function init(){
 			isadded[i][j] = false;
 		}
 	}
-
-	score = 0;            // 分数清零
+	// 初始化结束面板
+	initEndBoard();
+	// 分数清零
+	isWin = false;
+	score = 0;            
 	updateScore(score);
 	updateBoardView();	
 }
@@ -275,19 +279,35 @@ function moveDown(){
 }
 
 function isGameOver(){
-	for(var i=0; i<4; i++)
-		for(var j=0; j<4; j++)
-			if(board[i][j] == 2048)
-				youWin();
 	if(noSpace(board) && !canMove(board)){
 		gameOver();
+	}
+	else{
+		for(var i=0; i<4; i++)
+			for(var j=0; j<4; j++)
+				if(board[i][j] == 2048 && !isWin){
+					isWin = true;
+					youWin();
+				}
 	}
 }
 
 function youWin(){
-	alert('You Win!');
+	$("#end-board-info").text('You Win!');
+	$(".end-board-button").remove();
+	$("#end-board").append('<a href="javascript:initEndBoard();" class="end-board-button">continue</a>');
+	$("#end-board").append('<a href="javascript:NewGame();" class="end-board-button">New Game</a>');
+	$("#end-board").fadeIn("slow");
 }
 
 function gameOver(){
-	alert('Game Over');
+	$("#end-board-info").text('Game Over');
+	$(".end-board-button").remove();
+	$("#end-board").append('<a href="javascript:NewGame();" class="end-board-button">Try Again</a>');
+	$("#end-board").fadeIn("slow");
+}
+
+function initEndBoard(){
+	$("#end-board").fadeOut("slow");
+	$(".end-board-button").remove();
 }

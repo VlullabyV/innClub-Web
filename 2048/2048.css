@@ -40,9 +40,8 @@ header p{
 }
 
 #grid-container{
-	width: 460px; 				/* 外层大网格宽度设置为460px,即500-20*2 */
-	height: 460px; 				/* 高度也设置为460px */
-	padding: 20px; 				/* 内边距设置为20px */
+	width: 500px; 				/* 外层大网格宽度设置为500px, */
+	height: 500px; 				/* 高度也设置为500px */
 
 	margin: 50px auto;			/* 上下外边距50px，左右居中 */
 	background-color: #bbada0;	/* 设置背景颜色 */
@@ -65,9 +64,55 @@ header p{
 
 	font-family: Arial; 		
 	font-weight: bold; 			/* 粗体 */
-	font-size: 60px; 			/* 字体大小 */
+	font-size: 40px; 			/* 字体大小 */
 	line-height: 100px; 		/* 行高为100px */
 	text-align: center; 		/* 文本居中 */
 
 	position: absolute; 		/* 绝对定位 */
+}
+
+#end-board{
+	width: 460px;				/* 宽度460px */
+	height: 460px; 				/* 高度460px */
+	padding: 20px; 				/* 内边距20px */
+
+	background-color: #f5fffa;  /* 背景颜色 */
+	border-radius: 10px;  		/* 设置圆角边框 */
+
+	opacity: 0.8;  				/* 透明度20% */
+	display: none; 				/* 隐藏 */
+	
+	position: absolute; 		/* 绝对定位 */
+	z-index: 1;					/* 置于最上层 */					
+}
+
+#end-board-info{
+	font-family: Arial;			/* 字体设置 */
+	font-size:  60px; 			/* 字体大小60px */
+	font-weight: bold; 			/* 设置粗体 */
+	line-height: 60px; 			/* 行高60px */
+	text-align: center; 		/* 文本居中 */
+
+	margin: 220px auto 0;       /* 上外边距220px，左右居中，下外边距为0 */
+	color: #8b7d6b;
+}
+
+.end-board-button{
+	display: block;				/* 设置按钮为块状元素 */
+	margin: 20px auto;			/* 上下外边距20px，左右居中 */
+	
+	width: 100px;				/* 按钮宽度为100px */
+	padding: 10px;  			/* 内边距均设置为10px */
+	background-color: #8f7a66;	/* 按钮背景颜色 */
+
+	font-family: Arial;			/* 字体设置 */
+	text-align: center; 		/* 文本居中 */
+	color: white; 				/* 字体颜色设置为白色 */
+
+	border-radius: 10px;		/* 设置圆角边框 */
+
+	text-decoration: none;		/* 无文本修饰 */
+}
+.end-board-button:hover{
+	background-color: #9f8b77;
 }

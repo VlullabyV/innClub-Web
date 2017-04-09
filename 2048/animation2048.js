@@ -29,7 +29,7 @@ function showAddedAnimation(i, j){
 	numberCell.animate({
 		width: "120px",
 		height: "120px",
-		fontSize: "70px",
+		fontSize: "50px",
 		lineHeight: "120px",
 		top: getTopPos(i, j) - 10,
 		left: getLeftPos(i, j) - 10,
@@ -37,7 +37,7 @@ function showAddedAnimation(i, j){
 	numberCell.animate({
 		width: "100px",
 		height: "100px",
-		fontSize: "60px",
+		fontSize: "40px",
 		lineHeight: "100px",
 		top: getTopPos(i, j),
 		left: getLeftPos(i, j),
