@@ -60,6 +60,8 @@ function updateBoardView(){
 				numberCell.css('background-color',getNumberCellBgColor(board[i][j]));
 				numberCell.css('color',getNumberCellColor(board[i][j]));
 				numberCell.text(board[i][j]);
+				if(isadded[i][j])
+					showAddedAnimation(i, j);
 			}
 			
 			isadded[i][j] = false;
@@ -225,7 +227,7 @@ function moveRight(){
 						score += board[i][k];
 						updateScore(score);
 
-						isadded[i][k];
+						isadded[i][k] = true;
 						continue;
 
 					}
@@ -261,7 +263,7 @@ function moveDown(){
 						score += board[k][j];
 						updateScore(score);
 
-						isadded[k][j];
+						isadded[k][j] = true;
 						continue;
 					}
 				}
