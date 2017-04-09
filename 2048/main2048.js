@@ -107,28 +107,28 @@ $(document).keydown(function(event) {
 				setTimeout("addRandomNum()", 110);
 				setTimeout("isGameOver()", 200);
 			}
-			return false;   // 取消方向键对滚动条的控制
+			break;
 		case 38: 		// 上方向键
 		case 87: 		// 字母W键
 			if(moveUp()){
 				setTimeout("addRandomNum()", 110);
 				setTimeout("isGameOver()", 200);
 			}
-			break;		// 取消方向键对滚动条的控制
+			break;
 		case 39: 		// 右方向键
 		case 68: 		// 字母D键
 			if(moveRight()){
 				setTimeout("addRandomNum()", 110);
 				setTimeout("isGameOver()", 200);
 			}
-			break;		// 取消方向键对滚动条的控制
+			break;
 		case 40: 		// 下方向键
 		case 83: 		// 字母S键
 			if(moveDown()){
 				setTimeout("addRandomNum()", 110);
 				setTimeout("isGameOver()", 200);
 			}
-			break;		// 取消方向键对滚动条的控制
+			break;
 		default: 		// 其他按键无效
 			break;
 	}
