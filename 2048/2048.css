@@ -1,0 +1,73 @@
+header{
+	display: block;				/* 设置header标签为块状元素 */ 
+	margin: 0 auto;				/* 上下外边距设置为0，左右边距自动调整为相同值，即居中 */
+	width: 500px;				/* 宽度设置为500px */
+	text-align: center;			/* 文本居中 */
+}
+
+header h1{
+	font-family: Arial;			/* 字体设置 */
+	font-size: 60px;			/* 字体大小设置 */
+	font-weight: bold;      	/* 设置粗体 */
+
+	color: #8b7d6b;
+}
+
+header #NewGameButton{
+	display: block;				/* 设置按钮为块状元素 */
+	margin: 20px auto;			/* 上下外边距20px，左右居中 */
+	
+	width: 100px;				/* 按钮宽度为100px */
+	padding: 10px;  			/* 内边距均设置为10px */
+	background-color: #8f7a66;	/* 按钮背景颜色 */
+
+	font-family: Arial;			/* 字体设置 */
+	color: white; 				/* 字体颜色设置为白色 */
+
+	border-radius: 10px;		/* 设置圆角边框 */
+
+	text-decoration: none;		/* 无文本修饰 */
+}
+header #NewGameButton:hover{
+	background-color: #9f8b77;  /* 设置hover伪类使鼠标移动到按钮上时颜色变化 */
+}
+
+header p{
+	/* score样式设置 */
+	font-family: Arial;			/* 字体设置 */
+	font-size: 25px; 			/* 25px */
+	margin: 20px auto; 			/* 上下外边距20px，左右居中 */
+}
+
+#grid-container{
+	width: 460px; 				/* 外层大网格宽度设置为460px,即500-20*2 */
+	height: 460px; 				/* 高度也设置为460px */
+	padding: 20px; 				/* 内边距设置为20px */
+
+	margin: 50px auto;			/* 上下外边距50px，左右居中 */
+	background-color: #bbada0;	/* 设置背景颜色 */
+
+	border-radius: 10px; 		/* 设置圆角边框 */
+	position: relative;  		/* 父元素设置相对定位 */	
+}
+
+.grid-cell{
+	width: 100px;				/* 宽100px */
+	height: 100px; 				/* 高100px */
+	border-radius: 6px; 		/* 圆角边框6px */
+	background-color: #ccc0b3;	/* 背景颜色 */
+
+	position: absolute; 		/* 子元素设置绝对定位 */
+}
+
+.number-cell{
+	border-radius: 6px; 		/* 设置圆角边狂 */
+
+	font-family: Arial; 		
+	font-weight: bold; 			/* 粗体 */
+	font-size: 60px; 			/* 字体大小 */
+	line-height: 100px; 		/* 行高为100px */
+	text-align: center; 		/* 文本居中 */
+
+	position: absolute; 		/* 绝对定位 */
+}
