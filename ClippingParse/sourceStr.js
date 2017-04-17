@@ -90,11 +90,6 @@ They were the last people you’d expect to be involved in anything strange or m
 
 别看中国每年出几十万本新书，总结起来就是两本，一本是《成功学》，一本是《励志学》。
 ==========
-哈利波特原版（全集） (J·K·罗琳 (J.K.Rowling))
-- 您在位置 #5739-5740的标注 | 添加于 2016年11月21日星期一 上午12:19:25
-
-Nearly Headless Nick tried vainly to recapture his audience, but gave up as Sir Patrick’s head went sail-ing past him to loud cheers.
-==========
 洛阳女儿行 (小椴)
 - 您在位置 #2648-2649的标注 | 添加于 2016年12月25日星期日 上午12:40:49
 
@@ -140,7 +135,6 @@ Harry Potter and the Prisoner of Azkaban (Book 3) (Rowling, J.K.)
 
 Hagrid walked them back up to the castle.
 ==========
-
 古董局中局大全集 (马伯庸)
 - 您在位置 #3522-3523的标注 | 添加于 2016年4月12日星期二 下午4:03:21
 
