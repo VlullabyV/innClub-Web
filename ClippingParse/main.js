@@ -43,7 +43,7 @@ function preprocessStr(sourceStr){
             if(g3.length == 1)
                 g3 += '0';
             if(g4 == '下')
-                g5 = parseInt(g5) + 12;
+                g5 = parseInt(g5, "10") + 12;
             if(g5.length == 1)
                 g5 += '0';
             if(g6.length == 1)
@@ -78,7 +78,7 @@ function preprocessStr(sourceStr){
             if(g3.length == 1)
                 g3 += '0';
             if(g7 == 'P')
-                g4 = parseInt(g4) + 12;
+                g4 = parseInt(g4, "10") + 12;
             if(g4.length == 1)
                 g4 += '0';
             if(g5.length == 1)
