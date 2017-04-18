@@ -1,6 +1,6 @@
 function parseMarkTxt(sourceStr){ // 主函数
-	var tempStr = sourceStr;
-	var clippings = {
+    var tempStr = sourceStr;
+    var clippings = {
         booklist:[],
         mark:[]
     };
@@ -19,8 +19,8 @@ function parseMarkTxt(sourceStr){ // 主函数
 function preprocessStr(sourceStr){
 	// 匹配中文情况的Location
 	var reg1 = /您在位置 \#(\d{1,4})-\d{1,4}的标注/g;
-	while(reg1.exec(sourceStr))
-	    sourceStr = sourceStr.replace(reg1,"$1");
+    while(reg1.exec(sourceStr))
+        sourceStr = sourceStr.replace(reg1,"$1");
     var reg1 = /您在第 \d+ 页（位置 \#(\d+)-\d+）的标注/g;
     while(reg1.exec(sourceStr))
         sourceStr = sourceStr.replace(reg1,"$1");
