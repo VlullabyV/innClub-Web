@@ -93,7 +93,7 @@ function preprocessStr(sourceStr){
 function getBookList(booklist,sourceStr){
     var count = 0;
     // 匹配书名 相同书名不重复匹配
-    var reg1 = /(^(.+) \([^\(\)]+(?: \(.+\))?\)\n)(?!(.+\n\n(.+)?\n.+\n.+\n){0,}.+\n\n.+\n.+\n\1)/gm;
+    var reg1 = /(^(.+) \([^\(\)]+(?: (\(.+\)|著))?\)\n)(?!(.+\n\n(.+)?\n.+\n.+\n){0,}.+\n\n.+\n.+\n\1)/gm;
     var preprocessedBookList;
     while(preprocessedBookList = reg1.exec(sourceStr))
         booklist[count++] = preprocessedBookList[2];
