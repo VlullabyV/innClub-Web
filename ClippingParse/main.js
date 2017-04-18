@@ -18,7 +18,7 @@ function parseMarkTxt(sourceStr){ // 主函数
 
 
 function preprocessStr(sourceStr){
-	// 匹配中文情况的Location
+    // 匹配中文情况的Location
     var reg1 = /您在位置 \#(\d{1,4})-\d{1,4}的标注/g;
     while(reg1.exec(sourceStr))
         sourceStr = sourceStr.replace(reg1,"$1");
