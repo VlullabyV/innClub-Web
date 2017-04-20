@@ -50,7 +50,8 @@ function showMark(clippings,i){
 			$("#content-"+matchNum).text(clippings.mark[count].content);
 			$("#position-"+matchNum).text('您在位置 \#'+clippings.mark[count].position+' 的标注');
 			$("#time-"+matchNum).text(clippings.mark[count].time);
-
+			if(clippings.mark[count].content.indexOf("http") != -1)
+				$("#content-"+matchNum).css('word-break', 'break-all');
 			matchNum++;
 		}
 	}
