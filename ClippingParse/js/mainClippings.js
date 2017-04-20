@@ -75,8 +75,9 @@ function hideMark(clippings,i){
 	var bookNum = clippings.booklist.length;
 	$(".nextMouseEvent").css('display','none');
 	$(".marklist").fadeOut("1000");
-	setTimeout("showBooktitleDownAnimation(clippings,"+i+")",500);
-	setTimeout("$('.mouseEvent').css('display','block');",1000);
+	setTimeout("showBooktitleDownAnimation(clippings,"+i+")", 500);
+	setTimeout("$('.mouseEvent').css('display','block');", 1000);
+	setTimeout("$('.marklist').remove();", 1000)
 }
 
 function getBooklistPos(i){
