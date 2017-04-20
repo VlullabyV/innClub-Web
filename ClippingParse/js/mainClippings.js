@@ -77,7 +77,6 @@ function hideMark(clippings,i){
 	$(".marklist").fadeOut("1000");
 	setTimeout("showBooktitleDownAnimation(clippings,"+i+")",500);
 	setTimeout("$('.mouseEvent').css('display','block');",1000);
-	$(".marklist").remove();
 }
 
 function getBooklistPos(i){
