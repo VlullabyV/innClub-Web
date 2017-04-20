@@ -86,6 +86,7 @@ body .marklist{
 	font-size: 25px;
 	line-height: 25px;
 	float:left;
+	word-break:break-all;
 }
 
 .marklist .position{
